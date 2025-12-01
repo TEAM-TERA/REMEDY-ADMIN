@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: remedy-admin
+
+  datasource:
+    driver-class-name: io.trino.jdbc.TrinoDriver
+    url: ${TRINO_URL}
+
+  ai:
+    model:
+      chat:
+    openai:
+      api-key: ${AI_API_KEY}
+      chat:
+        options:
+          model: ${AI_MODEL}
+          temperature: ${AI_TEMPERATURE}
+        base-url: ${AI_BASE_URL}
+        completions-path: ${AI_COMPLETIONS_PATH}

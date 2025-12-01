@@ -1,0 +1,11 @@
+services:
+  trino:
+    image: trinodb/trino:478
+    container_name: trino
+    volumes:
+      - ./trino/etc:/etc/trino
+      - ./trino/data:/data
+      - ./trino/logs:/var/log/trino
+    environment:
+      - JAVA_TOOL_OPTIONS=-Xmx2g
+
