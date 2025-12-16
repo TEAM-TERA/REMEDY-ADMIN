@@ -39,3 +39,4 @@ out/
 .claude
 trino
 metadata.json
+prometheus.yaml
